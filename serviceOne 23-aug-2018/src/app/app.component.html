@@ -1,0 +1,27 @@
+<!-- <br>
+<div class="container">
+  <input type="text" class="form-control"
+  #name
+   placeholder="enter you name">
+<br>
+<button mat-flat-button
+ (click)="oncall(name)" > call func </button>
+
+</div>
+
+<br>
+
+<h5 [ngStyle]="{color: myName === 'sagar' ? 'red' : 'green' }" >
+  my Name is {{myName}}</h5> -->
+
+  <div fxLayout="row" style="width: 100%" fxLayoutAlign="space-around center" >
+ <app-data-enter style="width: 80%"></app-data-enter>
+
+
+
+
+
+<app-data-show *ngFor="let d of Data"
+[foodData]="d" >
+</app-data-show>
+</div>

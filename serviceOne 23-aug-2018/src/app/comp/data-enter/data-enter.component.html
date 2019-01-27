@@ -1,0 +1,27 @@
+
+  <div  fxLayout="column" fxLayoutAlign="space-around center" >
+
+        <mat-card class="w-100 bg-warning" >Enter Data</mat-card>
+        <br>
+
+        <mat-form-field class="w100">
+          <mat-select placeholder="Select Type of Food"  [(ngModel)]="option"  >
+          <mat-option *ngFor="let op of options"  [value]="op" > {{op}} </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <br>
+
+
+        <mat-form-field class="w100">
+          <input  matInput  type="text" placeholder="Enter Food Name" [(ngModel)]="name" >
+        </mat-form-field>
+
+        <br>
+        <mat-form-field class="w100">
+          <input  matInput type="number" placeholder="Enter Food Price" [(ngModel)]="price" >
+        </mat-form-field>
+
+        <button mat-raised-button color="warn" (click)="onAddItem()" > Add Item to basket </button>
+
+  </div>
+
